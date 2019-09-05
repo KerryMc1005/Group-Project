@@ -1,7 +1,7 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
 <head>
-  <meta charset="utf-8">
+
+
   <link rel="stylesheet"
   href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
   crossorigin="anonymous">
@@ -13,12 +13,12 @@
 
 <body>
 
-  <img src="images/facebook.jpg"> </img>
-  <img src="images/instagram.jpg"> </img>
-  <img src="images/youtube.jpg"> </img>
+  <a href="http://facebook.com"><img src="images/facebook.jpg"> </img></a>
+  <a href="https://www.instagram.com"><img src="images/instagram.jpg"></a> </img>
+  <a href="https://www.youtube.com/?gl=GB&hl=en-GB"><img src="images/youtube.jpg"></a> </img>
+<h1 class="starter-template"> GIRLS TRAVEL </h1>
 
-  <h1 class="starter-template"> GIRLS TRAVEL </h1>
-  <div class="modal" tabindex="-1" role="dialog">
+  <div class="modal" tabindex="-1" role="dialog" id="signUpToday">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -32,7 +32,6 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
         </div>
       </div>
     </div>
@@ -61,7 +60,10 @@
           <a class="nav-link" href="reviews.html">Reviews</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Log-in.html">Log in</a>
+          <a class="nav-link" href="login2.html">Log in</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Gallery.html">Gallery</a>
         </li>
       </ul>
     </div>
@@ -244,9 +246,10 @@
       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-london">
         Find out more
       </button>
-
-      <!-- Modal -->
-      <div class="modal fade" id="modal-london" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    </div>
+  </div>
+    <!-- Modal -->
+      <div class="modal fade" id="modal-borabora" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -256,7 +259,7 @@
               </button>
             </div>
             <div class="modal-body">
-          London is the capital of and largest city in England and the United Kingdom, with the largest municipal population in the European Union. Standing on the River Thames in the south-east of England, at the head of its 50-mile estuary leading to the North Sea. London is a leading global city in the arts, commerce, education, entertainment, fashion, finance, healthcare, media, professional services, research and development, tourism, and transportation.
+London is the capital of and largest city in England and the United Kingdom, with the largest municipal population in the European Union. Standing on the River Thames in the south-east of England, at the head of its 50-mile estuary leading to the North Sea. London is a leading global city in the arts, commerce, education, entertainment, fashion, finance, healthcare, media, professional services, research and development, tourism, and transportation.
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -265,5 +268,12 @@
         </div>
       </div>
     </div>
-    </body>
+  </div>
+
+  <script type="text/javascript">
+    $(window).on('load',function(){
+        $('#signUpToday').modal('show');
+    });
+</script>
+</body>
 </html>
