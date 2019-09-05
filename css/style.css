@@ -3,6 +3,9 @@ body{
 }
 .starter-template {
   text-align: center;
-  color:rgb(255,116,169);
+  color:rgb(139, 0, 139);
   font-family:fantasy;
+}
+body{
+  background-color:rgb(250, 235, 215);
 }
